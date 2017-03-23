@@ -8,10 +8,5 @@ using Blog.Entities;
 
 namespace Blog.EntityFramework.Repositories
 {
-    public class UserRepository : BlogRepositoryBase<TUser,string>
-    {
-        public UserRepository(IDbContextProvider<BlogDbContext> dbContextProvider) : base(dbContextProvider)
-        {
-        }
-    }
+
 }

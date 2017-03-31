@@ -120,12 +120,12 @@
   <ItemGroup>
     <Compile Include="EntityFramework\BlogDbContext.cs" />
     <Compile Include="EntityFramework\Repositories\BlogRepositoryBase.cs" />
+    <Compile Include="EntityFramework\Repositories\PortRepository.cs" />
     <Compile Include="EntityFramework\Repositories\UserRepository.cs" />
-    <Compile Include="Migrations\201703240123321_InitialData.cs" />
-    <Compile Include="Migrations\201703240123321_InitialData.Designer.cs">
-      <DependentUpon>201703240123321_InitialData.cs</DependentUpon>
+    <Compile Include="Migrations\201703310659122_InitialData.cs" />
+    <Compile Include="Migrations\201703310659122_InitialData.Designer.cs">
+      <DependentUpon>201703310659122_InitialData.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\AbpZeroDbMigrator.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="BlogDataModule.cs" />
     <Compile Include="Migrations\SeedData\DefaultEditionsCreator.cs" />
@@ -148,8 +148,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201703240123321_InitialData.resx">
-      <DependentUpon>201703240123321_InitialData.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201703310659122_InitialData.resx">
+      <DependentUpon>201703310659122_InitialData.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

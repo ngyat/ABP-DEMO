@@ -7,14 +7,14 @@ namespace Blog.Migrations
     {
         public override void Up()
         {
-            RenameTable(name: "dbo.T_Port", newName: "T_Ports");
-            RenameTable(name: "dbo.T_Tag", newName: "T_Tags");
+            AddColumn("dbo.T_Ports", "Posts", c => c.String());
+            DropColumn("dbo.T_Ports", "Content");
         }
         
         public override void Down()
         {
-            RenameTable(name: "dbo.T_Tags", newName: "T_Tag");
-            RenameTable(name: "dbo.T_Ports", newName: "T_Port");
+            AddColumn("dbo.T_Ports", "Content", c => c.String());
+            DropColumn("dbo.T_Ports", "Posts");
         }
     }
 }
